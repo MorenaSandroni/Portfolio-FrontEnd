@@ -1,0 +1,33 @@
+{
+    "name": "Morena Sandroni",
+    "profile": "Estudiante de Ingenieria Informatica y Desarolladora",
+    "email": "morenasandroni.b@gmail.com",
+    "mobile" : "+54 (2323)368134",
+    "location" : "Argentina",
+    "imgMe" : "assets/img/me.jpg",
+    "abilities" : {
+        "JAVA" : "60%",
+        "PYTHON" : "85%",
+        "CSS" : "50%",
+        "HTML" : "70%",
+        "JAVASCRIPT" : "50%",
+        "SQL" : "70%"
+    },
+    "mydescription" : {
+        "one" : "Soy estudiante de Ingenieria Informatica.",
+        "two" : "Desde la secundaria comencé a introducirme en el mundo de la programacion de software, desarrollando tanto habilidades duras como blandas.",
+        "three" : "Actualmente me encuentro como desarrolladora en Mastercore SAS, aprendiendo día a día y demostrando mis habilidades en el área. Busco una nueva experiencia con el fin de ampliar mi panorama laboral, compartiendo el día a día con personas enfocadas en un mismo objetivo."
+    },
+    "education" : {
+        "UBA" : "Estudiante en la Universidad de Buenos Aires - En curso.",
+        "YOPROGRAMO" : "Curso de programación informatica en el Instituto Nacional de Tecnologia Industrial.",
+        "PYTHON" : "Curso de Python en CoderHouse - Finalizado (TOP 10).",
+        "SECUNDARIO" : "Graduada Colegio San Patricio de Luján.",
+        "INGLES" : "B2 - First Certificate in English.",
+        "FRANCES" : "A2 - DELF."
+
+    },
+    "contact" : {
+        "moreInfo" : "Si tienes algún proyecto y te gustaría que forme parte del mismo, te invito a contactarme con el siguiente formulario, también puedes usarlo simplemente para dejarme algún comentario!"
+    }
+}
