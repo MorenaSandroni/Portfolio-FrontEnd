@@ -1,4 +1,4 @@
-export class Habilidades {
+export class Habilidad {
     id? : number;
     nombreH : string;
     porcentaje! : number;

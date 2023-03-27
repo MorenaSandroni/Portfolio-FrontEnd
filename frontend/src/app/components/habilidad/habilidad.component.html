@@ -1,0 +1,31 @@
+<div class="row">
+    <h1>Skills</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevahab" *ngIf="isLogged">
+            Nuevo Skill
+        </button>
+    </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Habilidad of hab">
+                    <td>
+                        <h2>{{Habilidad.nombreH}}</h2>
+                    </td>
+                    <td>{{Habilidad.porcentaje}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/edithab/{{Habilidad.id}}">
+                            <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Habilidad.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
