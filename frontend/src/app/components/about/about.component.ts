@@ -1,19 +1,21 @@
-import { Component } from '@angular/core';
-import { ProjectDataService } from 'src/app/services/project-data.service';
+import { Component, OnInit } from '@angular/core';
+import { persona } from 'src/app/model/persona.model'
+import { PersonaService } from 'src/app/service/persona.service';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent {
-  mydata:any;
-  constructor (private portfolioData: ProjectDataService ){ }
+export class AboutComponent implements OnInit {
+  persona: persona = new persona("","","");
+  
+  constructor (public personaService: PersonaService ){ }
   
   ngOnInit(): void {
-      this.portfolioData.getdataproject().subscribe(
+      this.personaService.getPersona().subscribe(
         data => {
-          this.mydata = data;
+          this.persona = data
         });
       }
 
