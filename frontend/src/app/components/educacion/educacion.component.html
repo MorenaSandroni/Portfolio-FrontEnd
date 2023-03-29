@@ -1,0 +1,37 @@
+<section id="educacion" class="services-mf pt-5 route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box-shadow-full">
+                    <div class="row">
+                        <h5 class="title-a">
+                        Educacion
+                        </h5>
+                        <div class="line-mf"></div>
+                        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+                            Agregar Educacion
+                        </button>
+                    </div>
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let Educacion of educacion">
+                                <td>
+                                    <span class="skill-mf">{{Educacion.nombreE}}</span>
+                                </td>
+                                <td>{{Educacion.descripcionE}}</td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+                                        <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                                </td>
+                                <td *ngIf="isLogged">
+                                    <button class="btn btn-danger" (click)="delete(Educacion.id)">
+                                        <i class="bi bi-trash-fill"></i> BORRAR</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

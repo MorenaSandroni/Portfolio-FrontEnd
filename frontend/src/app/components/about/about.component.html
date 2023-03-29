@@ -1,0 +1,40 @@
+<section id="about" class="about-mf sect-pt4 route" *ngIf="persona">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="box-shadow-full">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-sm-6 col-md-5">
+                    <div class="about-img">
+                      <img src="assets/img/me.jpg" class="img-fluid rounded b-shadow-a">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="about-me pt-4 pt-md-0">
+                      <p><span class="title-s">Nombre: </span> <span>{{persona.nombre}}</span></p>
+                      <p><span class="title-s">Apellido: </span> <span>{{persona.apellido}}</span></p>
+                      <p><span class="title-s">Mail: </span> <span>morenasandroni@gmail.com</span></p>
+                      <p><span class="title-s">Telefono: </span> <span>2323368134</span></p>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="about-me pt-4 pt-md-0">
+                      <div class="title-box-2">
+                        <h5 class="title-left">
+                        Sobre mi
+                        </h5>
+                      </div>
+                      <p class="lead">
+                        {{persona.descripcion}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>

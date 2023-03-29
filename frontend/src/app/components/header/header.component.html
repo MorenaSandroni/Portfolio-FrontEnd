@@ -1,0 +1,27 @@
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center justify-content-between"></div>
+  <nav id="navbar" class="navbar">    
+      <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/">
+        <img
+          src="../../../assets/img/APLogo-20-20.png"
+          alt="Logo Argentina Programa"
+          width="200" 
+          height="120"
+          id="logo"
+          data-aos="zoom-out" data-aos-duration="1500"/>
+      </a>
+      
+  
+      
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Sobre Mi</a></li>
+          <li><a class="nav-link scrollto" href="#educacion">Educacion</a></li>
+          <li><a class="nav-link scrollto" href="#habilidades">Skills</a></li>
+        
+        <li><button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">INGRESO</button></li>
+        <li><button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button></li>
+          </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+</header>
