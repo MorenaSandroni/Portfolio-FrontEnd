@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Habilidad } from 'src/app/model/habilidad';
-import { SHabilidadService } from 'src/app/service/s-habilidad.service';
+import { HabilidadService } from 'src/app/service/habilidad.service';
 import { TokenService } from 'src/app/service/token.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { TokenService } from 'src/app/service/token.service';
 export class HabilidadComponent implements OnInit {
   hab: Habilidad[] = [];
 
-  constructor(private sHabilidad: SHabilidadService, private tokenService: TokenService) { }
+  constructor(private sHabilidad: HabilidadService, private tokenService: TokenService) { }
 
   isLogged = false;
 

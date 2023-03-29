@@ -7,8 +7,8 @@ import { Habilidad } from '../model/habilidad';
 @Injectable({
   providedIn: 'root'
 })
-export class SHabilidadService {
-  expURL = 'https://backend-mgb.herokuapp.com/explab/';
+export class HabilidadService {
+  expURL = environment.URL + 'hab/';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -18,7 +18,7 @@ export class SHabilidadService {
 
   public detail(id: number): Observable<Habilidad>{
     return this.httpClient.get<Habilidad>(this.expURL + `detail/${id}`);
-  } 
+  }
 
   public save(habilidad: Habilidad): Observable<any>{
     return this.httpClient.post<any>(this.expURL + 'create', Habilidad);

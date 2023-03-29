@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Habilidad } from 'src/app/model/habilidad';
-import { SHabilidadService } from 'src/app/service/s-habilidad.service';
+import { HabilidadService } from 'src/app/service/habilidad.service';
 
 @Component({
   selector: 'app-edit-habilidad',
@@ -11,7 +11,7 @@ import { SHabilidadService } from 'src/app/service/s-habilidad.service';
 export class EditHabilidadComponent implements OnInit {
   hab: Habilidad = null;
 
-  constructor(private sHabilidad: SHabilidadService, private activatedRouter: ActivatedRoute,
+  constructor(private sHabilidad: HabilidadService, private activatedRouter: ActivatedRoute,
     private router: Router) { }
 
   ngOnInit(): void {

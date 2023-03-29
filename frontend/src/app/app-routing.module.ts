@@ -10,8 +10,8 @@ import { LoginComponent } from './components/login/login.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'nuevaexp', component: NewHabilidadComponent},
-  { path: 'editexp/:id', component: EditHabilidadComponent},
+  { path: 'nuevahab', component: NewHabilidadComponent},
+  { path: 'edithab/:id', component: EditHabilidadComponent},
   { path: 'nuevaedu', component: NeweducacionComponent},
   { path: 'editedu/:id', component: EditeducacionComponent},
 ];

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Habilidad } from 'src/app/model/habilidad';
-import { SHabilidadService } from 'src/app/service/s-habilidad.service';
+import { HabilidadService } from 'src/app/service/habilidad.service';
 
 @Component({
   selector: 'app-new-habilidad',
@@ -9,10 +9,10 @@ import { SHabilidadService } from 'src/app/service/s-habilidad.service';
   styleUrls: ['./new-habilidad.component.css']
 })
 export class NewHabilidadComponent implements OnInit {
-  nombreH: string = '';
-  porcentaje: number = 0;
+  nombreH: string;
+  porcentaje: number;
 
-  constructor(private sHabilidad: SHabilidadService, private router: Router) { }
+  constructor(private sHabilidad: HabilidadService, private router: Router) { }
 
   ngOnInit(): void {
   }

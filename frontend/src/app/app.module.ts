@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './components/about/about.component';
+import { HeroComponent } from './components/hero/hero.component';
 import { HabilidadComponent } from './components/habilidad/habilidad.component';
 import { EducacionComponent } from './components/educacion/educacion.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -17,12 +18,14 @@ import { NewHabilidadComponent } from './components/habilidad/new-habilidad.comp
 import { EditHabilidadComponent } from './components/habilidad/edit-habilidad.component';
 import { NeweducacionComponent } from './components/educacion/neweducacion.component';
 import { EditeducacionComponent } from './components/educacion/editeducacion.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    HeroComponent,
     AboutComponent,
     HabilidadComponent,
     EducacionComponent,
@@ -39,7 +42,8 @@ import { EditeducacionComponent } from './components/educacion/editeducacion.com
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgCircleProgressModule.forRoot({}),
   ],
   providers: [
     interceptorProvider
